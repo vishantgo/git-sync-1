@@ -1,37 +1,33 @@
-## Requirements
 
-No requirements.
+## Playbook: [debian.yml](debian.yml)
+> **Task:** Create Grafana group
 
-## Providers
+> **Task:** Create Grafana user
 
-| Name | Version |
-|------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
+> **Task:** Create directories
 
-## Modules
+> **Task:** Download Grafana
 
-No modules.
+> **Task:** Extract Grafana
 
-## Resources
+> **Task:** Move Grafana files
 
-| Name | Type |
-|------|------|
-| [azurerm_linux_virtual_machine.this](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine) | resource |
+> **Task:** Create Grafana config directory
 
-## Inputs
+> **Task:** Create Grafana config file
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_admin_username"></a> [admin\_username](#input\_admin\_username) | The admin username for the VM | `string` | n/a | yes |
-| <a name="input_ami_id"></a> [ami\_id](#input\_ami\_id) | The ID of the AMI to use for the VM | `string` | n/a | yes |
-| <a name="input_location"></a> [location](#input\_location) | The Azure region to deploy resources | `string` | n/a | yes |
-| <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group | `string` | n/a | yes |
-| <a name="input_ssh_public_key"></a> [ssh\_public\_key](#input\_ssh\_public\_key) | The SSH public key for VM authentication | `string` | n/a | yes |
-| <a name="input_vm_name"></a> [vm\_name](#input\_vm\_name) | The name of the virtual machine | `string` | n/a | yes |
-| <a name="input_vm_size"></a> [vm\_size](#input\_vm\_size) | The size of the virtual machine | `string` | n/a | yes |
+> **Task:** Create dashboard directory
 
-## Outputs
+> **Task:** Copy dashboard JSON files
 
-| Name | Description |
-|------|-------------|
-| <a name="output_vm_id"></a> [vm\_id](#output\_vm\_id) | n/a |
+> **Task:** Create systemd service file
+
+> **Task:** Reload systemd
+
+## Playbook: [main.yml](main.yml)
+> **Author:** John Doe
+
+> **Description:** Appserver role
+
+> **Task:** Install grafana on Debian
+
